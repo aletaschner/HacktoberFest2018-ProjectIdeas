@@ -1,5 +1,8 @@
 # Hello World!
 This is a simple project with the pourpose of grouping ideas and exposing them in a way that people can use to turn into real things!</p>
+
+[Click here to access](https://aletaschner.github.io/HacktoberFest2018-ProjectIdeas/)
+
 ## Contributing
  Contributing to this project is easy. You can do it in 3 possible ways:
 
