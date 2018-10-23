@@ -4,7 +4,6 @@ import { ProjectIdeas } from 'src/_data/projects';
 import { Filter } from 'src/_models/filter';
 import { Observable } from 'rxjs/internal/Observable';
 import { of } from 'rxjs';
-import {IProjectService} from './IProject-service';
 import {Language} from '../_models/language';
 import {Category} from '../_models/category';
 
