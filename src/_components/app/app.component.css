@@ -1,0 +1,26 @@
+.big-o-container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media all and (min-width: 960px) { 
+    .big-o-container {
+        width: 75%
+    }    
+}
+@media all and (min-width: 768px) and (max-width: 959px) {
+    .big-o-container {
+        width: 80%;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 767px){ 
+    .big-o-container {
+        width: 85%;
+    }
+}
+@media all and (max-width: 479px) { 
+    .big-o-container {
+        width: 100%;
+        padding: 0 5px;
+    }
+}

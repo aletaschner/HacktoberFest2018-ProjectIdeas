@@ -1,0 +1,15 @@
+mat-card, mat-toolbar {
+    margin-top: 15px;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    white-space: wrap;
+}
+.mat-toolbar-row {
+    height: auto;
+}
+
+.alert-card {
+    background-color: #d9534f;
+    color:#FFF;
+}

@@ -1,0 +1,19 @@
+<mat-toolbar *ngIf="!isMobileOrTablet();" color="primary">
+  <span>Hacktoberfest2018 - Ideas</span>
+  <a mat-button routerLink="/" routerLinkActive="active">About</a>
+  <a style="margin-left: 1em" routerLink="projects" routerLinkActive="active" mat-button>Project Ideas</a>    
+  <a mat-button href="https://github.com/aletaschner/HacktoberFest2018-ProjectIdeas" rel="noopener" target="_blank">Github</a>
+</mat-toolbar>
+
+<div *ngIf="isMobileOrTablet();">
+  <mat-toolbar color="primary">
+    <span>Hacktoberfest2018 - Ideas</span>
+    <span class="lets-make-this-menu-button-go-right"></span>
+    <button mat-button [matMenuTriggerFor]="menu"> Menu </button>
+  </mat-toolbar>
+  <mat-menu  #menu="matMenu">
+    <a mat-button routerLink="/" routerLinkActive="active">About</a>
+    <a style="margin-left: 1em" routerLink="projects" routerLinkActive="active" mat-button>Project Ideas</a>    
+    <a mat-button href="https://github.com/aletaschner/HacktoberFest2018-ProjectIdeas" target="_blank" rel="noopener">Github</a>
+</mat-menu>
+</div>

@@ -1,0 +1,76 @@
+<div class="filter-container">
+   <mat-card>
+    <mat-card-header>
+      <mat-card-title>Filters</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="filterForm" (submit)="sendForm()">
+          
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Category" aria-label="Number" matInput formControlName="category" [matAutocomplete]="autoCategory">
+            <mat-autocomplete #autoCategory="matAutocomplete">
+              <mat-option value="">
+                - Any -
+              </mat-option>
+              <mat-option *ngFor="let option of toKeys(categories)" [value]="categories[option]">
+                {{categories[option]}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Language" aria-label="Number" matInput formControlName="language" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+                <mat-option value="">
+                  - Any -
+                </mat-option>
+              <mat-option *ngFor="let option of toKeys(languages)" [value]="languages[option]">
+                {{languages[option]}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Username or project name" aria-label="Number" matInput formControlName="text">
+          </mat-form-field>
+
+          <button mat-raised-button color="primary">Apply</button>
+        </form>
+      </mat-card-content>
+  </mat-card>
+</div>
+
+<div class="project-list-container">
+    <mat-card *ngFor="let project of projectIdeas">
+      <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>
+              <span *ngIf="project.url == ''">{{project.title}}</span>
+              <a [href]="project.url" target="_blank" rel="noopener" *ngIf="project.url != ''">
+                {{project.title}}
+              </a>
+          </mat-card-title>
+          <mat-card-subtitle>
+              Idea by: <a [href]="'https://github.com/'+project.author.username">{{project.author.name}}</a>
+          </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{project.description}}</p>
+      </mat-card-content>
+      <mat-card-footer>          
+        <mat-chip-list>
+            <mat-chip *ngFor="let lang of project.recommendedLanguages">
+              {{languages[lang]}}
+            </mat-chip>
+            <mat-chip *ngFor="let cat of project.categories">
+              {{categories[cat]}}
+            </mat-chip>
+        </mat-chip-list>
+      </mat-card-footer>
+    </mat-card>
+
+    <mat-toolbar color="secondary" *ngIf="projectIdeas.length == 0 ">
+      <p>Sorry, there's no projects to show with the filters you selected.</p>
+    </mat-toolbar>
+</div>
+  
