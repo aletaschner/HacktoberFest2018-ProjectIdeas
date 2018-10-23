@@ -38,6 +38,4 @@ export class ProjectService{
 
     return of(projects);
   }
-
-
 }
