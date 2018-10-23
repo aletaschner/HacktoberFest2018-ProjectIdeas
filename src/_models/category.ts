@@ -3,5 +3,6 @@ export enum Category {
     Software,
     Service,
     Product,
-    Website
+    Website,
+    Games
 }
