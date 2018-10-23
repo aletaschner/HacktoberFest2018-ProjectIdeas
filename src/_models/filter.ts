@@ -1,5 +1,5 @@
 export interface Filter {
     category?: string;
-    author?: string;
+    text?: string;
     language? : string;
 }

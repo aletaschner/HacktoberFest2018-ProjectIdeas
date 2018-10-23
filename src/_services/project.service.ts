@@ -17,10 +17,11 @@ export class ProjectService{
   getProjects(filter : Filter) : Observable<ProjectIdea[]>{
     let projects = this.projectIdeas;
     
-    if(filter.author){
+    if(filter.text){
       projects = projects.filter(
-        p => p.author.name.indexOf(filter.author) > -1 
-             && p.author.username.indexOf(filter.author) > -1 
+        p => p.author.name.indexOf(filter.text) > -1 
+             || p.author.username.indexOf(filter.text) > -1 
+             || p.title.indexOf(filter.text) > -1
       );
     }
 
