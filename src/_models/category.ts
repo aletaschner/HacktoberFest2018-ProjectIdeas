@@ -4,5 +4,6 @@ export enum Category {
     Service,
     Product,
     Website,
-    Games
+    Games,
+    ApiRest
 }
