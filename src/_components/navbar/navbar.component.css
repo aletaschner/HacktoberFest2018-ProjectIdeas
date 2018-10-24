@@ -8,3 +8,7 @@
     height: 60%;
     margin-left: 1em;
 }
+
+.lets-make-this-menu-button-go-right {
+    flex: 1 1 auto;
+}
