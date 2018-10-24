@@ -8,6 +8,8 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 })
 export class NavbarComponent {
 
+  PageTitle: string = "Hacktoberfest2018 - Ideas";
+
   constructor(private mobileDetector : DeviceDetectorService) { }
 
   isMobileOrTablet() : boolean {

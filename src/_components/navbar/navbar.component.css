@@ -1,3 +1,10 @@
-.lets-make-this-menu-button-go-right {
-    flex: 1 1 auto;
+.mat-toolbar > .mat-button, .mat-flat-button, .mat-icon-button, .mat-stroked-button{
+    margin-left: 2em;
+}
+
+.mat-divider{
+    background-color: white;
+    width: 2px;
+    height: 60%;
+    margin-left: 1em;
 }

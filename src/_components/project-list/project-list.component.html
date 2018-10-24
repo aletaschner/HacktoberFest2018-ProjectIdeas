@@ -43,7 +43,7 @@
 <div class="project-list-container">
     <mat-card *ngFor="let project of projectIdeas">
       <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
+          <img mat-card-avatar [src]="'https://github.com/' + project.author.username + '.png?size=40'">
           <mat-card-title>
               <span *ngIf="project.url == ''">{{project.title}}</span>
               <a [href]="project.url" target="_blank" rel="noopener" *ngIf="project.url != ''">
@@ -59,10 +59,10 @@
       </mat-card-content>
       <mat-card-footer>          
         <mat-chip-list>
-            <mat-chip *ngFor="let lang of project.recommendedLanguages">
+            <mat-chip class="language-chip" *ngFor="let lang of project.recommendedLanguages">
               {{languages[lang]}}
             </mat-chip>
-            <mat-chip *ngFor="let cat of project.categories">
+            <mat-chip class="categorie-chip" *ngFor="let cat of project.categories">
               {{categories[cat]}}
             </mat-chip>
         </mat-chip-list>

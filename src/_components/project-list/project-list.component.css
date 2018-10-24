@@ -16,7 +16,6 @@
     padding-right: 10px;
 }
 .example-header-image {
-    background-image: url('../../assets/logo-hacktoberfest-658b5aa2bd34e782d29c40bf6afbdff00f20fe1328efa6da17743878ba8db66f.png');
     background-size: cover;
 }
 
@@ -24,4 +23,36 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 15px;
+}
+
+.mat-card {
+    width: 100%;
+}
+
+.mat-raised-button:not([class*=mat-elevation-z]){
+    margin-left: 10px;
+}
+
+.mat-card > .mat-card-footer{
+    padding-bottom: 10px !important;
+}
+
+body .mat-card-content.p {
+    padding-left: 1em;
+}
+
+.mat-card-content > p {
+    margin-left: 1em;
+}
+
+div .mat-form-field-appearance-legacy, .mat-form-field-wrapper{
+    margin: 1em;
+}
+
+.language-chip{
+    background-color: bisque;
+}
+
+.categorie-chip{
+    background-color: aqua;
 }

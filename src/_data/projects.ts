@@ -18,5 +18,13 @@ export const ProjectIdeas : ProjectIdea[] = [
         description: "Create a page for indicative the most dangerous locations on the city using police data.",
         recommendedLanguages: [Language.Javascript],
         url: ""
+    },
+    {
+        title : "Manga/Anime without ads integrated with steemit.",
+        author: {name: "Pablo Bianco", username: "marce1994"},
+        categories: [Category.Website],
+        description: "Today there are a lot of ads whenever you are, the idea is to make an ad-free place to watch and share anime/manga related content, where the contributors can get rewarded by a social network like steemit.\n Tecnologies: IPFS, Angular, Steemit, Webtorrent(maybe)",
+        recommendedLanguages: [Language.Javascript, Language.CSharp],
+        url: ""
     }
 ];
