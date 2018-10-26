@@ -26,5 +26,13 @@ export const ProjectIdeas : ProjectIdea[] = [
         description: "Today there are a lot of ads whenever you are, the idea is to make an ad-free place to watch and share anime/manga related content, where the contributors can get rewarded by a social network like steemit.\n Tecnologies: IPFS, Angular, Steemit, Webtorrent(maybe)",
         recommendedLanguages: [Language.Javascript, Language.CSharp],
         url: ""
+    },
+    {
+        title : "Use machine learning to decide when it's ideal to go on a ride during a chosen day",
+        author: {name: "Denny Cao", username: "DennyizHere"},
+        categories: [Category.Website],
+        description: "I did a smaller scale of this, but it'll be amazing to see if others can make this bigger. Run scripts to get information on the wait times at certain rides at a theme park at a given day. Then use machine learning and run the dataset to see which ride would be best to queue up for at a given time. Many things to consider like what if the park is hosting a holiday event, ride preference, etc.",
+        recommendedLanguages: [Language.Javascript, Language.Python],
+        url: ""
     }
 ];
