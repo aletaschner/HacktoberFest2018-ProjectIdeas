@@ -11,7 +11,7 @@ export const ProjectIdeas : ProjectIdea[] = [
         recommendedLanguages: [Language.Javascript],
         url: "https://github.com/aletaschner/HacktoberFest2018-ProjectIdeas"
     },
-     {
+    {
         title : "Indicative of dangerous locations in the city",
         author: {name: "Felipe Putsch", username: "flpputsch"},
         categories: [Category.Website],
@@ -32,6 +32,14 @@ export const ProjectIdeas : ProjectIdea[] = [
         author: {name: "Denny Cao", username: "DennyizHere"},
         categories: [Category.Website],
         description: "I did a smaller scale of this, but it'll be amazing to see if others can make this bigger. Run scripts to get information on the wait times at certain rides at a theme park at a given day. Then use machine learning and run the dataset to see which ride would be best to queue up for at a given time. Many things to consider like what if the park is hosting a holiday event, ride preference, etc.",
+        recommendedLanguages: [Language.Javascript, Language.Python],
+        url: ""
+    },
+    {
+        title : "A place to share user made body exercises",
+        author: {name: "Luiz Monge", username: "MajorMonge"},
+        categories: [Category.Website],
+        description: "A intuitive and quick place to share, view and rate body exercises.",
         recommendedLanguages: [Language.Javascript, Language.Python],
         url: ""
     }
