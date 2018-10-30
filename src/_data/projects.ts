@@ -42,5 +42,12 @@ export const ProjectIdeas : ProjectIdea[] = [
         description: "A intuitive and quick place to share, view and rate body exercises.",
         recommendedLanguages: [Language.Javascript, Language.Python],
         url: ""
+    },
+    {
+        title: "Online library of things",
+        author: {name: "Kristians Kanders", username: "kandersk"},
+        categories: [Category.App],
+        description: "Web app where people can create communities with similar interest and then give and borrow items in relation to that. Simplest example a book club where each person can send a book that is stored at a warehous and other people can check that book out and submit theirs. This could have a paid subscription model that let's you access the libraries for a montly fee (to cover warehousing and any maintenance necessary)",
+        recommendedLanguages: [Language.Javascript, Language.CSharp],
     }
 ];
