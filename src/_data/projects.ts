@@ -17,7 +17,7 @@ export const ProjectIdeas : ProjectIdea[] = [
         categories: [Category.Website],
         description: "Create a page for indicative the most dangerous locations on the city using police data.",
         recommendedLanguages: [Language.Javascript],
-        url: ""
+        url: "https://github.com/marce1994/MyPWA"
     },
     {
         title : "Manga/Anime without ads integrated with steemit.",
