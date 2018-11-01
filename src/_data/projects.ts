@@ -17,7 +17,7 @@ export const ProjectIdeas : ProjectIdea[] = [
         categories: [Category.Website],
         description: "Create a page for indicative the most dangerous locations on the city using police data.",
         recommendedLanguages: [Language.Javascript],
-        url: "https://github.com/marce1994/MyPWA"
+        url: ""
     },
     {
         title : "Manga/Anime without ads integrated with steemit.",
@@ -25,6 +25,6 @@ export const ProjectIdeas : ProjectIdea[] = [
         categories: [Category.Website],
         description: "Today there are a lot of ads whenever you are, the idea is to make an ad-free place to watch and share anime/manga related content, where the contributors can get rewarded by a social network like steemit.\n Tecnologies: IPFS, Angular, Steemit, Webtorrent(maybe)",
         recommendedLanguages: [Language.Javascript, Language.CSharp],
-        url: ""
+        url: "https://github.com/marce1994/MyPWA"
     }
 ];
